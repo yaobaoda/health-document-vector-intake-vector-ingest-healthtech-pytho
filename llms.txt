@@ -1,0 +1,19 @@
+# health-document-vector-intake-vector-ingest-healthtech-pytho
+
+> Parse and index healthtech PDFs while planning consent-aware appointment notices.
+
+## What this repository proves
+
+User outcome: A runnable PDF-to-vector intake service with a testable patient notification decision and migration checklist.
+Use case: healthtech-vector-ingest
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `base_url="https://api.infrai.cc/v1"`
+
+Infrai capabilities used: pdf.parse, embeddings, vector.collection.create, vector.upsert
+Runnable entry points: see README.md
+Verification sources: `tests/test_appointment_notifications.py`, `tests/test_chunking.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

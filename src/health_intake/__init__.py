@@ -1,0 +1,1 @@
+"""Health document intake example."""
